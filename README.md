@@ -51,4 +51,5 @@ How will you approach each other and the challenge of building an application kn
 
 ## WRRC
 
-Lab 11:
+Lab 11:![lab_11_720](https://user-images.githubusercontent.com/73040864/224853111-a77019b9-d62c-4e31-9235-560a537d1be1.jpg)
+
