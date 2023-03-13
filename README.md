@@ -41,11 +41,11 @@
 - Make a list of each person’s strengths. 
     - Michael: Problem solving, code implementation 
     - Joel: Teamwork, patience
--How can you best utilize these strengths in the development of your application? 
+- How can you best utilize these strengths in the development of your application? 
     - While pair programmin, we will have the other person walk the driver through their logic to teach them
--In what areas do you each want to develop greater strength? 
+- In what areas do you each want to develop greater strength? 
     - We both would like to improve upon our ability to work with React as well as handling databases
--Knowing that every person in your team needs to understand the code, how do you plan to approach the day-to-day development? 
+- Knowing that every person in your team needs to understand the code, how do you plan to approach the day-to-day development? 
     - We will work today explaining any new implementations as well as utilize pair-programming
 
 ## Conflict Resolution
