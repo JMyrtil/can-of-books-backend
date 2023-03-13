@@ -31,21 +31,31 @@
     - 9 to 9
 - What platform will you use to communicate (ie. Slack, phone …)? 
     - Slack, Discord and phone
-- How often will you take breaks? - At least once an hour
-What is your plan if you start to fall behind? - We will regroup and figure out what we are stuck on. Then, we will use appropriate resources to figure out
+- How often will you take breaks? 
+    - At least once an hour
+- What is your plan if you start to fall behind? 
+    - We will regroup and figure out what we are stuck on. Then, we will use appropriate resources to figure out
 
 ## Cooperative
 
-Make a list of each person’s strengths. - Michael: Problem solving, code implementation - Joel: Teamwork, patience
-How can you best utilize these strengths in the development of your application? - While pair programmin, we will have the other person walk the driver through their logic to teach them
-In what areas do you each want to develop greater strength? - We both would like to improve upon our ability to work with React as well as handling databases
-Knowing that every person in your team needs to understand the code, how do you plan to approach the day-to-day development? - We will work today explaining any new implementations as well as utilize pair-programming
+- Make a list of each person’s strengths. 
+    - Michael: Problem solving, code implementation 
+    - Joel: Teamwork, patience
+-How can you best utilize these strengths in the development of your application? 
+    - While pair programmin, we will have the other person walk the driver through their logic to teach them
+-In what areas do you each want to develop greater strength? 
+    - We both would like to improve upon our ability to work with React as well as handling databases
+-Knowing that every person in your team needs to understand the code, how do you plan to approach the day-to-day development? 
+    - We will work today explaining any new implementations as well as utilize pair-programming
 
 ## Conflict Resolution
 
-What will your team do if one person is pulling all the weight while the other person is not contributing? - Since there are two of us, we will hold eachother accountable
-What will your team do if one person is taking over the project and not letting the other member contribute? - We will ensure proper task managment and split up the work appropriately
-How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level? - We will compile our product together at all times
+- What will your team do if one person is pulling all the weight while the other person is not contributing? 
+    - Since there are two of us, we will hold eachother accountable
+- What will your team do if one person is taking over the project and not letting the other member contribute? 
+    - We will ensure proper task managment and split up the work appropriately
+- How will you approach each other and the challenge of building an application knowing that it is impossible for two people to be at the exact same place in understanding and skill level? 
+    - We will compile our product together at all times
 
 ## Trello
 
