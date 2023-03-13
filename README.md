@@ -27,11 +27,11 @@
 
 ## Logistical
 
-What hours will you be available to communicate? 
+- What hours will you be available to communicate? 
     - 9 to 9
-What platform will you use to communicate (ie. Slack, phone …)? 
+- What platform will you use to communicate (ie. Slack, phone …)? 
     - Slack, Discord and phone
-How often will you take breaks? - At least once an hour
+- How often will you take breaks? - At least once an hour
 What is your plan if you start to fall behind? - We will regroup and figure out what we are stuck on. Then, we will use appropriate resources to figure out
 
 ## Cooperative
