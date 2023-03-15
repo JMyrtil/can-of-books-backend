@@ -22,6 +22,10 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 3002;
 
+app.get('/', (request, response) => {
+  response.status(200).send('Book Found!')
+});
+
 app.get('/books', getBooks);
 app.post('/books', postBook);
 app.delete('/books/:id', deleteBook);
@@ -58,9 +62,11 @@ async function deleteBook(req, res, next) {
 
 
 
-app.get('/', (request, response) => {
-  response.status(200).send('Book Found!')
-});
+
+
+app.get('/test', (request, response) => {
+  response.send('test request received')
+})
 
 app.get('*', (request, response) => {
   response.status(404).send('Book NOT Found!')
@@ -70,8 +76,6 @@ app.use((error, request, response, next) => {
   response.status(500).send('Error');
 });
 
-app.get('/test', (request, response) => {
-  response.send('test request received')
-})
+
 
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
