@@ -16,19 +16,51 @@ mongoose.connect(process.env.DB_URL);
 const app = express();
 app.use(cors());
 
+//app.use(express.json());
+
 const PORT = process.env.PORT || 3002;
 
 app.get('/books', getBooks);
+
+// Lab 12 -------------------------
+app.post('/books', postBooks);
+app.delete('/books/:id', deleteBooks);
+// -------------------------------
+
+
+
 
 async function getBooks(req, res, next) {
   try {
     let results = await Book.find({});
     res.status(200).send(results);
   } catch(err) {
-    next(arr);
+    next(err);
   }
 }
 
+// Lab 12 -------------------------
+async function postBooks(req, res, next) {
+  console.log(req.body);
+  try {
+    let createdBook = await Book.create(req.body);
+    req.status(200).send(createdBook);
+  } catch(err) {
+    next(err);
+  }
+}
+
+ 
+async function deleteBooks(req, res, next) {
+  try {
+    let id = req.params.id;
+    await Book.findByIdAndDelete(id);
+    req.status(200).send('Book deleted');
+  } catch(err) {
+    next(err);
+  }
+}
+// -------------------------------
 
 app.get('/', (request, response) => {
   response.status(200).send('Book Found!')
