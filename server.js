@@ -18,11 +18,13 @@ const app = express();
 app.use(cors());
 
 app.use(express.json());
+
+
 const PORT = process.env.PORT || 3002;
 
 app.get('/books', getBooks);
-app.post('/books', postBooks);
-app.delete('/books/:id', deleteBooks);
+app.post('/books', postBook);
+app.delete('/books/:id', deleteBook);
 
 
 async function getBooks(req, res, next) {
@@ -30,11 +32,11 @@ async function getBooks(req, res, next) {
     let results = await Book.find({});
     res.status(200).send(results);
   } catch(err) {
-    next(arr);
+    next(err);
   }
 }
 
-async function postBooks(req, res, next) {
+async function postBook(req, res, next) {
   console.log(req.body);
   try {
     let createdBook = await Book.create(req.body);
@@ -44,7 +46,7 @@ async function postBooks(req, res, next) {
   }
 }
 
-async function deleteBooks(req, res, next) {
+async function deleteBook(req, res, next) {
   try {
     let id = req.params.id;
     await Book.findByIdAndDelete(id);
