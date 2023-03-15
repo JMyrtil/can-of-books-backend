@@ -12,7 +12,7 @@ async function seed() {
         description: 'Fantasy, Mythology',
         status: 'Available'
     });
-    console.log('Percy Jackson was added');
+    console.log('Percy Jackson & the Olympians was added');
     await Book.create({
         title: 'Goosebumps',
         description: 'Spooky',
