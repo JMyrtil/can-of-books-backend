@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 
 mongoose.connect(process.env.DB_URL);
 
-const Book = require('./model/books');
+const Book = require('./models/books');
 
 async function clear() {
   try {

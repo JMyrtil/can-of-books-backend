@@ -8,7 +8,7 @@ const Book = require('./models/books.js');
 
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error'));
-db.once('open', function() {
+db.once('open', function () {
   console.log('Mongoose is connected');
 });
 mongoose.connect(process.env.DB_URL);
@@ -29,7 +29,7 @@ app.get('/', (request, response) => {
 app.get('/books', getBooks);
 app.post('/books', postBook);
 app.delete('/books/:id', deleteBook);
-app.delete('/books:id', putBook)
+app.put('/books/:id', putBook)
 
 
 async function getBooks(req, res, next) {
