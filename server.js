@@ -29,6 +29,7 @@ app.get('/', (request, response) => {
 app.get('/books', getBooks);
 app.post('/books', postBook);
 app.delete('/books/:id', deleteBook);
+app.delete('/books:id', putBook)
 
 
 async function getBooks(req, res, next) {
@@ -44,7 +45,7 @@ async function postBook(req, res, next) {
   console.log(req.body);
   try {
     let createdBook = await Book.create(req.body);
-    req.status(200).send(createdBook);
+    res.status(200).send(createdBook);
   } catch(err) {
     next(err);
   }
@@ -54,15 +55,22 @@ async function deleteBook(req, res, next) {
   try {
     let id = req.params.id;
     await Book.findByIdAndDelete(id);
-    req.status(200).send('Book deleted');
+    res.status(200).send('Book deleted');
   } catch(err) {
     next(err);
   }
 }
 
-
-
-
+async function putBook(req, res, next) {
+  try {
+    let id = req.params.id;
+    let updatedBook = req.body;
+    let bookFromDatabase = await Book.findByIdAndUpdate(id, updatedBook, { new: true, overwrite: true });
+    res.status(200).send(bookFromDatabase);
+  } catch(err) {
+    next(err);
+  }
+}
 
 app.get('/test', (request, response) => {
   response.send('test request received')
